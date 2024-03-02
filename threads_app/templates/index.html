@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}
+Главная страница
+{% endblock %}
+{% block content %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css"> 
+  <title>Instagram</title>
+</head>
+<body>
+  <div class="instagram-card">
+    <div class="instagram-card-header">
+      <img src="data:image/jpeg;base64,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" class="instagram-card-user-image"/>
+      <a class="instagram-card-user-name" href="https://www.instagram.com/followmeto/">followmeto</a>
+      <div class="instagram-card-time">58 min</div>
+    </div>
+  
+    <div class="intagram-card-image">
+        <img src="https://i.guim.co.uk/img/media/18badfc0b64b09f917fd14bbe47d73fd92feeb27/189_335_5080_3048/master/5080.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1562112c7a64da36ae0a5e75075a0d12" height="600px"/>
+    </div>
+  
+    <div class="instagram-card-content">
+      <p><a class="instagram-card-content-user" href="https://www.instagram.com/followmeto/">followmeto</a> So excited to have made it to Lapland! Our first stop was sleeping inside a room made entirely of ice at the Kemi Snow Hotel 😱 Stoked that I've ticked this off my bucket list and never have to do it again... Let's just say the novelty of sleeping in -5 degrees temperature quickly wears off (but hey, it was a COOL experience nonetheless) 😜❄️ <a class="hashtag" href="https://www.instagram.com/explore/tags/visitkemi/">#visitkemi</a></p>
+      <br><a class="user-comment" href="https://www.instagram.com/anitzakm/">sanguine.j@loaf_made</a> wowwwwww</br>
+      <br><a class="user-comment" href="https://www.instagram.com/anitzakm/">spainstakeoverWow</a> 😍</br>
+      <br><a class="user-comment" href="https://www.instagram.com/anitzakm/">edieandottotravelsSo</a> cool ❄️</br>
+      <hr>
+      <p class="comments">48 ответов * 36 отметок "Нравится"</p>
+      
+    </div>
+    
+    <div class="instagram-card-footer">
+      <a class="footer-action-icons" href="#"><i class="fa fa-heart-o"></i></a>
+      <input class="comments-input" type="text" placeholder="Еще комментарий..."/>
+      <a class="footer-action-icons" href="#"><i class="fa fa-ellipsis-h"></i></a>
+    </div>
+
+  </div>
+</body>
+</html>
+{% endblock %}
